@@ -181,3 +181,37 @@ a:hover {
 .card p {
   margin: 0 0 16px;
 }
+
+/* Daily log */
+.log {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0 0;
+  border-left: 2px solid var(--border);
+}
+
+.log li {
+  position: relative;
+  padding: 0 0 18px 24px;
+}
+
+.log li::before {
+  content: "";
+  position: absolute;
+  left: -7px;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  background: var(--accent);
+}
+
+.log time {
+  display: block;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+#log-count {
+  color: var(--accent);
+}
