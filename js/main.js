@@ -17,3 +17,8 @@
   var count = document.getElementById("log-count");
   if (count) count.textContent = LOG.length;
 })();
+
+(function () {
+  var year = document.getElementById("year");
+  if (year) year.textContent = new Date().getFullYear();
+})();

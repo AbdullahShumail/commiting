@@ -215,3 +215,12 @@ a:hover {
 #log-count {
   color: var(--accent);
 }
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 32px 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
