@@ -43,3 +43,78 @@ a:hover {
   margin: 0 auto;
   padding: 0 20px;
 }
+
+/* Header */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(13, 17, 23, 0.85);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 1.4rem;
+  color: var(--text);
+}
+
+.logo span {
+  color: var(--accent);
+}
+
+.nav nav a {
+  color: var(--muted);
+  margin-left: 20px;
+}
+
+.nav nav a:hover {
+  color: var(--text);
+  text-decoration: none;
+}
+
+/* Hero */
+.hero {
+  padding: 120px 20px 100px;
+}
+
+.eyebrow {
+  color: var(--accent);
+  font-weight: 600;
+  margin: 0;
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem, 7vw, 4.5rem);
+  line-height: 1.1;
+  margin: 8px 0 16px;
+}
+
+.lead {
+  color: var(--muted);
+  font-size: 1.25rem;
+  max-width: 560px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 12px 24px;
+  border-radius: var(--radius);
+  background: var(--accent);
+  color: #0d1117;
+  font-weight: 700;
+}
+
+.btn:hover {
+  text-decoration: none;
+  filter: brightness(1.1);
+}
