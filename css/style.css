@@ -8,6 +8,7 @@
   --accent-soft: #0e4429;
   --radius: 12px;
   --max: 960px;
+  --header-bg: rgba(13, 17, 23, 0.85);
 }
 
 *,
@@ -49,7 +50,7 @@ a:hover {
   position: sticky;
   top: 0;
   z-index: 10;
-  background: rgba(13, 17, 23, 0.85);
+  background: var(--header-bg);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--border);
 }
@@ -223,4 +224,36 @@ a:hover {
   text-align: center;
   color: var(--muted);
   font-size: 0.9rem;
+}
+
+/* Light theme */
+[data-theme="light"] {
+  --bg: #ffffff;
+  --surface: #f6f8fa;
+  --border: #d0d7de;
+  --text: #1f2328;
+  --muted: #59636e;
+  --accent: #1a7f37;
+  --accent-soft: #dafbe1;
+  --header-bg: rgba(255, 255, 255, 0.85);
+}
+
+[data-theme="light"] .btn {
+  color: #ffffff;
+}
+
+.theme-toggle {
+  margin-left: 20px;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  border-color: var(--accent);
 }
