@@ -6,3 +6,4 @@ LOG.push({ time: "2026-09-28 10:55", text: "Watched a short talk on keyboard nav
 LOG.push({ time: "2026-09-28 11:27", text: "Took notes on responsive images." });
 LOG.push({ time: "2026-09-28 11:44", text: "Reviewed typography scales." });
 LOG.push({ time: "2026-09-28 12:05", text: "Watched a short talk on regular expressions." });
+LOG.push({ time: "2026-09-28 12:28", text: "Read about lazy loading." });
