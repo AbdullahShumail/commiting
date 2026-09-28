@@ -17,27 +17,24 @@ scripts/            automation for the daily log
 
 ## Daily log automation
 
-`scripts/auto-commit.ps1` appends one entry to `data/log.js`, commits it and
-pushes to GitHub. It randomly skips some runs so commits land at uneven gaps,
-caps itself at 20 commits a day, and never skips late in the day if there are
-fewer than 10.
+`scripts/auto-commit.ps1` appends an entry to `data/log.js`, commits it and
+pushes to GitHub.
 
-Install the scheduled task (runs every 45 minutes, 08:30 until midnight):
+Run it every morning from this folder and leave the window open:
 
 ```powershell
-.\scripts\install-schedule.ps1
+.\scripts\auto-commit.ps1
 ```
 
-Remove it:
+It picks a target of 10-20 commits for the day and waits a random 15-50
+minutes between commits. If you close the window early, run it again and it
+carries on (commits already made today count toward the target). It stops
+before midnight.
+
+Make one commit right now instead:
 
 ```powershell
-.\scripts\uninstall-schedule.ps1
-```
-
-Run it once by hand, with no random skip or delay:
-
-```powershell
-.\scripts\auto-commit.ps1 -Force
+.\scripts\auto-commit.ps1 -Once
 ```
 
 Each run is recorded in `auto-commit.log` (ignored by git).
