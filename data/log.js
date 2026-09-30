@@ -34,3 +34,4 @@ LOG.push({ time: "2026-09-30 15:26", text: "Watched a short talk on merge confli
 LOG.push({ time: "2026-09-30 15:26", text: "Practiced responsive images." });
 LOG.push({ time: "2026-09-30 15:26", text: "Worked through an exercise on clean code habits." });
 LOG.push({ time: "2026-09-30 15:26", text: "Took notes on accessibility and ARIA labels." });
+LOG.push({ time: "2026-09-30 15:26", text: "Reviewed semantic HTML." });
