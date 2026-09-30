@@ -29,3 +29,4 @@ LOG.push({ time: "2026-09-30 15:25", text: "Worked through an exercise on writin
 LOG.push({ time: "2026-09-30 15:25", text: "Experimented with regular expressions." });
 LOG.push({ time: "2026-09-30 15:25", text: "Revisited unit testing." });
 LOG.push({ time: "2026-09-30 15:26", text: "Wrote a small example of GitHub Pages." });
+LOG.push({ time: "2026-09-30 15:26", text: "Worked through an exercise on HTTP status codes." });
