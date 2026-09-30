@@ -36,3 +36,4 @@ LOG.push({ time: "2026-09-30 15:26", text: "Worked through an exercise on clean 
 LOG.push({ time: "2026-09-30 15:26", text: "Took notes on accessibility and ARIA labels." });
 LOG.push({ time: "2026-09-30 15:26", text: "Reviewed semantic HTML." });
 LOG.push({ time: "2026-09-30 15:26", text: "Practiced semantic HTML." });
+LOG.push({ time: "2026-09-30 16:07", text: "Worked through an exercise on Big-O notation." });
